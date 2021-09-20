@@ -18,6 +18,7 @@ import AdminRoute from './components/routes/AdminRoute'
 import PrivateRoute from './components/routes/PrivateRoute'
 import Profile from './pages/Profile'
 import AddProduct from './pages/AddProduct'
+import AddTopping from './pages/AddTopping'
 
 function App() {
   localStorage.setItem('dataUser', JSON.stringify(dataUser));
@@ -37,6 +38,7 @@ function App() {
               <PrivateRoute path='/profile' exact component={Profile} />
 
               <AdminRoute path='/addproduct' exact component={AddProduct} />
+              <AdminRoute path='/addtopping' exact component={AddTopping} />
 
               <Route component={NotFound} />
             </Switch>
