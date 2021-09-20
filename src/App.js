@@ -14,17 +14,20 @@ import { Container, Row } from 'react-bootstrap'
 import dataUser from './data/datauser.json'
 import DataProduct from './data/DataProduct'
 import dataTopping from './data/topping.json'
+import dataTransaction from './data/transaction.json'
 import AdminRoute from './components/routes/AdminRoute'
 import PrivateRoute from './components/routes/PrivateRoute'
 import Profile from './pages/Profile'
 import AddProduct from './pages/AddProduct'
 import AddTopping from './pages/AddTopping'
+import Transactions from './pages/Transactions'
+import moduleName from './data/transaction.json'
 
 function App() {
   localStorage.setItem('dataUser', JSON.stringify(dataUser));
   localStorage.setItem('DataProduct', JSON.stringify(DataProduct));
   localStorage.setItem('dataTopping', JSON.stringify(dataTopping));
-  
+  localStorage.setItem('dataTransaction', JSON.stringify(dataTransaction));
   return (
     <Router>
       <div className="App">
@@ -33,12 +36,13 @@ function App() {
           <Row className='justify-content-md-center' >
             <Switch>
               <Route path="/" exact component={Home} />
-              <PrivateRoute path='/product' exact component={DetailProduct} />
-              <PrivateRoute path='/cartpage' exact component={CartPage} />
+              <PrivateRoute path='/product/:id' exact component={DetailProduct} />
+              <PrivateRoute path='/cart' exact component={CartPage} />
               <PrivateRoute path='/profile' exact component={Profile} />
 
               <AdminRoute path='/addproduct' exact component={AddProduct} />
               <AdminRoute path='/addtopping' exact component={AddTopping} />
+              <AdminRoute path='/transaction' exact component={Transactions} />
 
               <Route component={NotFound} />
             </Switch>

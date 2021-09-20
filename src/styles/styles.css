@@ -304,4 +304,24 @@ height:24px;
   margin-right: 1rem;
   
   }
-    
+  .box1 {
+    border-radius: 5px;
+    background: #F7DADA;
+    padding: 20px; 
+    margin: 10px;
+    width: 100%;
+  }
+  .cart-notif{
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    font-size:12px;
+    position : relative;
+    transform : translate(-15px, 3px);
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background: #bd0707;
+    color: #fff;
+   
+  }

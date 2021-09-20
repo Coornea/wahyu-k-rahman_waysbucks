@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import { Navbar, Container, Nav, Button, NavLink } from "react-bootstrap";
 import Icon from '../../assets/brandlogo.svg';
 import Guest from './Guest'
@@ -46,11 +46,13 @@ function Header() {
             <div>
                 <Navbar expand="lg">
                     <Container>
-                        <Navbar.Brand>
-                            <NavLink>
-                                <img src={Icon} alt="Brand" style={{padding: 2}} />
-                            </NavLink>
-                        </Navbar.Brand>
+                        <Link to='/'>
+                            <Navbar.Brand>
+                                <NavLink to='/'>
+                                    <img src={Icon} alt="Brand" style={{padding: 2}} />
+                                </NavLink>
+                            </Navbar.Brand>
+                        </Link>
                             <Nav className='me-auto' />
                             <Nav>
                                 {/* <Button className="button2" onClick={handleShow}><b>Login</b></Button>
