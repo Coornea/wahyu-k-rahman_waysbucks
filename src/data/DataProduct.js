@@ -8,25 +8,25 @@ const data = [
         id: 1,
         product: "Ice Coffee Palm Sugar",
         img: image1,
-        price: "27.000"
+        price: 27000,
     },
     {
         id: 2,
         product: "Ice Coffee Green Tea",
         img: image2,
-        price: "31.000"
+        price: 31000,
     },
     {
         id: 3,
         product: "Hanami Latte",
         img: image3,
-        price: "29.000"
+        price: 29000,
     },
     {
         id: 4,
         product: "Clepon Coffee",
         img: image4,
-        price: "28.000"
+        price: 28.000,
     },
 ];
 

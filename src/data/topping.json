@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Bubble Tea Gelatin",
+        "price": 3000,
+        "imgUrl": "/img/topping/1.png"
+    },
+    {
+        "id": 2,
+        "name": "Mango",
+        "price": 3000,
+        "imgUrl": "/img/topping/2.png"
+    },
+    {
+        "id": 3,
+        "name": "Green Coconut",
+        "price": 3000,
+        "imgUrl": "/img/topping/3.png"
+    },
+    {
+        "id": 4,
+        "name": "Boba Mango",
+        "price": 3000,
+        "imgUrl": "/img/topping/4.png"
+    },
+    {
+        "id": 5,
+        "name": "Bill Berry Boba",
+        "price": 3000,
+        "imgUrl": "/img/topping/5.png"
+    },
+    {
+        "id": 6,
+        "name": "Kiwi Popping Pearl",
+        "price": 3000,
+        "imgUrl": "/img/topping/6.png"
+    },
+    {
+        "id": 7,
+        "name": "Matcha Cantaloupe",
+        "price": 3000,
+        "imgUrl": "/img/topping/7.png"
+    },
+    {
+        "id": 8,
+        "name": "Strawberry Popping",
+        "price": 3000,
+        "imgUrl": "/img/topping/8.png"
+    }
+]
