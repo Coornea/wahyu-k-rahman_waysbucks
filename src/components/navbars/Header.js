@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom'
 import { Navbar, Container, Nav, Button, NavLink } from "react-bootstrap";
 import Icon from '../../assets/brandlogo.svg';
 import Guest from './Guest'
@@ -18,6 +19,7 @@ function Header() {
     // const handleCloseReg = () => setShowReg(false);
     // const handleShowReg = () => setShowReg(true);
 
+    const router = useHistory();
     const dataLogin = JSON.parse(localStorage.getItem('dataLogin'));
     console.log(dataLogin);
 
@@ -30,12 +32,14 @@ function Header() {
 
     function handleLogout() {
         localStorage.removeItem('dataLogin');
+        localStorage.removeItem('login');
         setData({
             isLogin: false,
             email: '',
             password: '',
             status: '',
         })
+        router.push('/');
     }
     return (
         <div>

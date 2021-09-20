@@ -14,7 +14,9 @@ import { Container, Row } from 'react-bootstrap'
 import dataUser from './data/datauser.json'
 import DataProduct from './data/DataProduct'
 import dataTopping from './data/topping.json'
-
+import AdminRoute from './components/routes/AdminRoute'
+import PrivateRoute from './components/routes/PrivateRoute'
+import Profile from './pages/Profile'
 
 function App() {
   localStorage.setItem('dataUser', JSON.stringify(dataUser));
@@ -31,6 +33,9 @@ function App() {
               <Route path="/" exact component={Home} />
               <Route path='/product' exact component={DetailProduct} />
               <Route path='/cartpage' exact component={CartPage} />
+              <Route path='/profile' exact component={Profile} />
+
+              {/* <AdminRoute path='' /> */}
 
               <Route component={NotFound} />
             </Switch>

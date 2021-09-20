@@ -26,7 +26,7 @@ const data = [
         id: 4,
         product: "Clepon Coffee",
         img: image4,
-        price: 28.000,
+        price: 28000,
     },
 ];
 
