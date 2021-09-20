@@ -81,3 +81,17 @@
     transition: all 0.12s ease-in-out;
     outline: 0;
 }
+
+.header3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #bd0707;
+}
+
+.titleProduct {
+    color: #bd0707;
+    font-weight: bold;
+}
+.titlePrice {
+    color: #bd0707;
+}
