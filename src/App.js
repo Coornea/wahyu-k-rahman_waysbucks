@@ -17,6 +17,7 @@ import dataTopping from './data/topping.json'
 import AdminRoute from './components/routes/AdminRoute'
 import PrivateRoute from './components/routes/PrivateRoute'
 import Profile from './pages/Profile'
+import AddProduct from './pages/AddProduct'
 
 function App() {
   localStorage.setItem('dataUser', JSON.stringify(dataUser));
@@ -31,11 +32,11 @@ function App() {
           <Row className='justify-content-md-center' >
             <Switch>
               <Route path="/" exact component={Home} />
-              <Route path='/product' exact component={DetailProduct} />
-              <Route path='/cartpage' exact component={CartPage} />
-              <Route path='/profile' exact component={Profile} />
+              <PrivateRoute path='/product' exact component={DetailProduct} />
+              <PrivateRoute path='/cartpage' exact component={CartPage} />
+              <PrivateRoute path='/profile' exact component={Profile} />
 
-              {/* <AdminRoute path='' /> */}
+              <AdminRoute path='/addproduct' exact component={AddProduct} />
 
               <Route component={NotFound} />
             </Switch>
