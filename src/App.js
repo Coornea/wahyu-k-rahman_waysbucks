@@ -3,14 +3,15 @@ import React from 'react'
 // import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/navbars/Header'
-import Home from './pages/Home'
+// import Home from './pages/Home'
 import './styles/styles.css';
+import DetailProduct from './pages/DetailProduct'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <DetailProduct />
     </div>
   );
 }
