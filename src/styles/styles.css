@@ -201,8 +201,9 @@ height:24px;
     right: 0;
     height: 25px;
     width: 25px;
+    border-radius: 12px;
     background-color: #eee;
-  cursor: pointer;
+    cursor: pointer;
   }
   
   /* On mouse-over, add a grey background color */
@@ -212,7 +213,7 @@ height:24px;
   
   /* When the checkbox is checked, add a green background */
   .block-check input:checked ~ .checkmark {
-    background-color: #21f39c;
+    background-color: #07990c;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
